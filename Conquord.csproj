@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conquord</RootNamespace>
+    <AssemblyName>Conquord</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Conquord.Program</StartupObject>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <ApplicationIcon>Conquord.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ShaDow|x64' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;DEBUG;UNSAFE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ShaDow|x86' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ShaDow|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>Build\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TroZenA|AnyCPU'">
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4114.6375, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Phoenix\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="cityLookUp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Phoenix\cityLookUp.dll</HintPath>
+    </Reference>
+    <Reference Include="CO2_CORE_DLL, Version=1.0.0.20, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CO2_CORE_DLL.dll</HintPath>
+    </Reference>
+    <Reference Include="HandEvaluator, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\SourceGame\Interfaces\ElmistRo\HandEvaluator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Phoenix\Microsoft.QualityTools.Testing.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Phoenix\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="msvcrt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Phoenix\msvcrt.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NpcDialogs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NpcDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>bin\Debug\database\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SystemExtensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\Console.cs" />
+    <Compile Include="Database\AccountTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActivenessTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\AddingInformationTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ArenaTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Booth.cs" />
+    <Compile Include="Database\ChiRetreatTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ChiTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ClaimItemTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ConquerItemInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ConquerItemTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DailyQuestTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DataHolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DetainedItemTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DMaps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\EntityTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\EntityVariableTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\FloorItemTable.cs" />
+    <Compile Include="Database\FlowersTable.cs" />
+    <Compile Include="Database\GuildArsenalTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\GuildTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\HouseTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\IPBan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ItemAddingTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\KingdomMissionTable.cs" />
+    <Compile Include="Database\KnownPersons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\LotteryTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\MailboxTable.cs" />
+    <Compile Include="Database\MapsTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\MonsterTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\MySql\MySqlCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\MySql\MySqlExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\MySql\MySqlReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\NobilityTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\PerfectionTable.cs" />
+    <Compile Include="Database\PkExplorer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\PoketTables.cs" />
+    <Compile Include="Database\QuizShowTable.cs" />
+    <Compile Include="Database\Read.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ReincarnationTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Shops\ChampionShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Shops\EShopFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Shops\EShopV2File.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Shops\HonorShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Shops\RacePointShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Shops\ShopFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\SignInTable.cs" />
+    <Compile Include="Database\SkillTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\SoulProtection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\SpellTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\SubClassTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TeamArenaTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\UnionTable.cs" />
+    <Compile Include="Database\Write.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Attacking\RandomLite.cs" />
+    <Compile Include="Game\Clone.cs" />
+    <Compile Include="Game\ConquerStructures\BotShop.cs" />
+    <Compile Include="Game\MonsterSpawn.cs" />
+    <Compile Include="Game\Statue\Statue.cs" />
+    <Compile Include="Game\Statue\StatueTable.cs" />
+    <Compile Include="Game\UsableRacePotion.cs" />
+    <Compile Include="Services\AuthPackets\LoaderEncryption.cs" />
+    <Compile Include="Services\CrossFlagWar\Countrys.cs" />
+    <Compile Include="Services\CrossFlagWar\CrossServer.cs" />
+    <Compile Include="Services\CrossFlagWar\CurrentLocationPacket.cs" />
+    <Compile Include="Services\GamePackets\[System]Cpu\CpuUsage.cs" />
+    <Compile Include="Services\GamePackets\[System]Cpu\MemoryCompressor.cs" />
+    <Compile Include="Services\GameSystem`s\CO2_CORE_DLL.IO.cs" />
+    <Compile Include="Services\GameSystem`s\GameUpdates.cs" />
+    <Compile Include="Services\GameSystem`s\MsgPCServerConfig.cs" />
+    <Compile Include="Services\GamePackets\[System]Poker\Poker.cs" />
+    <Compile Include="Services\GamePackets\[System]Poker\PokerTable.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IRoulette.cs" />
+    <Compile Include="Services\GameSystem`s\class Loading.cs" />
+    <Compile Include="Services\GamePackets\[System]Perfection\Perfection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\GameSystem`s\[1126] - MsgInviteTrans.cs" />
+    <Compile Include="Services\GameSystem`s\[2622] - MsgLeagueOpt.cs" />
+    <Compile Include="Services\GameSystem`s\[3200] - MsgSignIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\GamePackets\[System]Poker\Enlight.cs" />
+    <Compile Include="Services\GamePackets\[System]Poker\HandlePoker.cs" />
+    <Compile Include="Services\GamePackets\[System]Poker\PokerTables.cs" />
+    <Compile Include="Services\GamePackets\[System]Perfection\PrestigeRank.cs" />
+    <Compile Include="Conquord\BinaryWriter.cs" />
+    <Compile Include="Conquord\ClassExtensions.cs" />
+    <Compile Include="Game\ConquerStructures\QuizShow.cs" />
+    <Compile Include="Services\GameSystem`s\[2820 - 2822 - 2823] - Activeness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\GameSystem`s\[1320] - MsgAuction.cs" />
+    <Compile Include="Services\GameSystem`s\[2600] - MsgGoldLeaguePoint.cs" />
+    <Compile Include="Services\GameSystem`s\[1313] - MsgFamilyOccupy.cs" />
+    <Compile Include="Conquord\CtrlType.cs" />
+    <Compile Include="Conquord\Effectx.cs" />
+    <Compile Include="Conquord\GameUpdetess.cs" />
+    <Compile Include="Conquord\KitMerchant.cs" />
+    <Compile Include="Conquord\LastLogin.cs" />
+    <Compile Include="Conquord\Native.cs" />
+    <Compile Include="Game\Attacking\Battle\MvP.cs" />
+    <Compile Include="Game\Attacking\Battle\MyMath.cs" />
+    <Compile Include="Game\Attacking\Battle\PvE.cs" />
+    <Compile Include="Game\Attacking\Battle\PvM.cs" />
+    <Compile Include="Game\Attacking\Battle\PvP.cs" />
+    <Compile Include="Game\Attacking\BlessEffect.cs" />
+    <Compile Include="Game\Attacking\Calculate.cs" />
+    <Compile Include="Game\Attacking\DurabilityItems.cs" />
+    <Compile Include="Game\Attacking\GemEffect.cs" />
+    <Compile Include="Game\Attacking\Handle.cs" />
+    <Compile Include="Game\Attacking\InLineAlgorithm.cs" />
+    <Compile Include="Game\Attacking\RangeMove.cs" />
+    <Compile Include="Game\Attacking\Sector.cs" />
+    <Compile Include="Game\Attacking\Zoning.cs" />
+    <Compile Include="Game\DelayedTask.cs" />
+    <Compile Include="Services\GameSystem`s\Flowers.cs" />
+    <Compile Include="Services\GamePackets\[System]JiangHu\JiangHu.cs" />
+    <Compile Include="Database\JiangHuTable.cs" />
+    <Compile Include="Services\GamePackets\[System]JiangHu\JiangHuPackets.cs" />
+    <Compile Include="Client\AuthClient.cs" />
+    <Compile Include="Client\GameClient.cs" />
+    <Compile Include="Client\PacketFilter.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1046] - MsgMailList.cs" />
+    <Compile Include="Services\GamePackets\[System]Mentor &amp; Apprentice\Mentor.cs" />
+    <Compile Include="Services\GameSystem`s\[1134 - 1135] - MsgTaskStatus.cs" />
+    <Compile Include="Services\GameSystem`s\[2068] - MsgQuiz.cs" />
+    <Compile Include="Services\GameSystem`s\Reincarnation.cs" />
+    <Compile Include="Services\GameSystem`s\[2071] - MsgRelation.cs" />
+    <Compile Include="Services\GamePackets\[System]Roulettes\RouletteActions.cs" />
+    <Compile Include="Services\GamePackets\[System]Roulettes\RouletteCheck.cs" />
+    <Compile Include="Services\GamePackets\[System]Roulettes\RouletteSpawn.cs" />
+    <Compile Include="Services\GamePackets\[System]Roulettes\RouletteStructure.cs" />
+    <Compile Include="Services\GameSystem`s\[1111] - MsgMessageBoard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\GameSystem`s\UnionClass.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1040] - MsgPlayerAttriInfo.cs" />
+    <Compile Include="Conquord\NpcControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conquord\NpcControl.designer.cs">
+      <DependentUpon>NpcControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conquord\Storage\3300-Coat-Storage.cs" />
+    <Compile Include="Conquord\Storage\3301-Title-Storage.cs" />
+    <Compile Include="Conquord\Storage\Storage-Manager.cs" />
+    <Compile Include="Conquord\Storage\Storage.cs" />
+    <Compile Include="Conquord\Storage\WardrobeTitles.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\CaptureTheFlag.cs" />
+    <Compile Include="Services\GamePackets\[System]InnerPower\InnerPower.cs" />
+    <Compile Include="Database\InnerPowerTable.cs" />
+    <Compile Include="Services\GameSystem`s\EpicTaoIcon.cs" />
+    <Compile Include="Services\GameSystem`s\[1113] - MsgDice.cs" />
+    <Compile Include="Conquord\Common.cs" />
+    <Compile Include="Conquord\GenericActionList.cs" />
+    <Compile Include="Game\ConquerStructures\Society\GuildMinDonations.cs" />
+    <Compile Include="Services\GamePackets\[System]Lottery\LotteryPacket.cs" />
+    <Compile Include="Game\ConquerStructures\Society\GuildProfilePacket.cs" />
+    <Compile Include="Conquord\BitVector32.cs" />
+    <Compile Include="Services\GameSystem`s\[1136] - MsgAchievement.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Advertises.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Recruitment.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\EliteGuildWar.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\HeroOfGame.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\Poker.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\SkillTournament.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\SteedRace.cs" />
+    <Compile Include="Conquord\IniFiles.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1070] - MsgHangUp.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\ElitePK.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\Arena.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\ClanWar.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\ElitePKTournament.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\GuildWar.cs" />
+    <Compile Include="Services\GamePackets\[System]Tournaments\TeamArena.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IConquerItem.cs" />
+    <Compile Include="Services\AuthPackets\Authentication.cs" />
+    <Compile Include="Services\AuthPackets\Forward.cs" />
+    <Compile Include="Services\AuthPackets\PasswordCryptographySeed.cs" />
+    <Compile Include="Services\GameSystem`s\ConcurrentPacketQueue.cs" />
+    <Compile Include="Services\Cryptography\AuthCryptography.cs" />
+    <Compile Include="Services\Cryptography\GameCryptography.cs" />
+    <Compile Include="Services\Cryptography\RC5.cs" />
+    <Compile Include="Services\Cryptography\RC5Exception.cs" />
+    <Compile Include="Services\GameSystem`s\[2225 - 2226 - 2227] - MsgSynRecruitAdvertising.cs" />
+    <Compile Include="Services\GamePackets\[System]Mentor &amp; Apprentice\Apprentice.cs" />
+    <Compile Include="Services\GameSystem`s\[2209] - MsgQualifyingDetailInfo.cs" />
+    <Compile Include="Services\GameSystem`s\[2201] - MsgTotemPoleInfo.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1022] - MsgAttack.cs" />
+    <Compile Include="Services\GameSystem`s\[2081] - MsgDeadMark.cs" />
+    <Compile Include="Services\GameSystem`s\[1108] - MsgItemInfoEX.cs" />
+    <Compile Include="Services\GameSystem`s\[2050] - MsgPigeon.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1006] - MsgUserInfo.cs" />
+    <Compile Include="Services\GamePackets\[System]Chi\Chi.cs" />
+    <Compile Include="Services\GameSystem`s\[1312] - MsgFamily.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1009] - MsgItemEquip.cs" />
+    <Compile Include="Services\GameSystem`s\[2036] - MsgDataArray.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1052] - MsgConnect.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1008] - MsgItemInfo.cs" />
+    <Compile Include="Services\GameSystem`s\[2430] - MsgNationality.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[10010] - MsgAction.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1034] - MsgDetainItemInfo.cs" />
+    <Compile Include="Services\GameSystem`s\DHKeyExchange.cs" />
+    <Compile Include="Services\GameSystem`s\ElitePkandTeamPk.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1027] - MsgGemEmbed.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1001] - MsgRegister.cs" />
+    <Compile Include="Services\GameSystem`s\[1127] - MsgMentorPlayer.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1101] - MsgMapItem.cs" />
+    <Compile Include="Services\GameSystem`s\[2075] - MsgRaceTrackStatus.cs" />
+    <Compile Include="Services\GameSystem`s\[1151] - MsgRank.cs" />
+    <Compile Include="Services\GamePackets\[System]MsgWalk\[10005] - MsgWalk.cs" />
+    <Compile Include="Services\GameSystem`s\[1107] - MsgGuild.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1022] - MsgInteract.cs" />
+    <Compile Include="Services\GamePackets\[System]Item\ItemAdding.cs" />
+    <Compile Include="Services\GamePackets\[System]Item\ItemAddingStabilization.cs" />
+    <Compile Include="Services\GamePackets\[System]Item\ItemLock.cs" />
+    <Compile Include="Services\GamePackets\[System]Item\ItemSoul.cs" />
+    <Compile Include="Services\GamePackets\[System]Item\ItemUsage.cs" />
+    <Compile Include="Services\GameSystem`s\[2033] - MsgFriendInfo.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1019] - MsgFriend.cs" />
+    <Compile Include="Services\GameSystem`s\[2045] - MsgAutoGroup.cs" />
+    <Compile Include="Services\GameSystem`s\[1110] - MsgMapInfo.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1004] - MsgTalk.cs" />
+    <Compile Include="Services\GameSystem`s\[2064] - MsgPeerage.cs" />
+    <Compile Include="Services\GamePackets\[System]NPCs &amp; SobNPCs\Npcs.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1009] - MsgObserv.cs" />
+    <Compile Include="Services\GameSystem`s\[2043] - MsgTrainingInfo.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1025] - MsgWeaponSkill.cs" />
+    <Compile Include="Services\GameSystem`s\Purification.cs" />
+    <Compile Include="Services\GameSystem`s\[2072] - MsgRaceTrackProp.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1071] - MsgCompeteRank.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1035] - MsgDetainItemUpdate.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1033] - MsgData.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1104] - MsgFlushExp.cs" />
+    <Compile Include="Services\GamePackets\[System]SlotMachine\SlotMachineRequest.cs" />
+    <Compile Include="Services\GamePackets\[System]SlotMachine\SlotMachineResponse.cs" />
+    <Compile Include="Services\GamePackets\[System]NPCs &amp; SobNPCs\SobNpcSpawn.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1103] - MsgMagicInfo.cs" />
+    <Compile Include="Services\GameSystem`s\[1105] - MsgMagicEffect.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1015] - MsgName.cs" />
+    <Compile Include="Services\GameSystem`s\SyncPacket.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1023] - MsgTeam.cs" />
+    <Compile Include="Services\GameSystem`s\[2245] - MsgTeamArenaHeroData.cs" />
+    <Compile Include="Services\GameSystem`s\[1130] - MsgTitle.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1056] - MsgTrade.cs" />
+    <Compile Include="Services\GameSystem`s\[1114] - MsgSyncAction.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[10017] - MsgUserAttribute.cs" />
+    <Compile Include="Services\GameSystem`s\[1129] - VipFunctionValidNotify.cs" />
+    <Compile Include="Services\GameSystem`s\[1128] - MsgVipUserHandle.cs" />
+    <Compile Include="Services\GamePackets\[System]Users\[1033] - MsgVigor.cs" />
+    <Compile Include="Services\GameSystem`s\[1102] - MsgPackage.cs" />
+    <Compile Include="Services\GameSystem`s\[2261] - Msg2ndPassword.cs" />
+    <Compile Include="Services\GameSystem`s\[2823] - MsgStatisticDaily.cs" />
+    <Compile Include="Services\PacketHandler.cs" />
+    <Compile Include="Services\ServerSocket\ClientWrapper.cs" />
+    <Compile Include="Services\ServerSocket\LoginBruteForce.cs" />
+    <Compile Include="Services\ServerSocket\ServerSocket.cs" />
+    <Compile Include="Game\ConquerStructures\Society\GuildDoantion.cs" />
+    <Compile Include="Services\GamePackets\[System]Lottery\Lottery.cs" />
+    <Compile Include="Services\GameSystem`s\[2080] - MsgChangeName.cs" />
+    <Compile Include="Services\GameSystem`s\[2220] - MsgPkStatistic.cs" />
+    <Compile Include="Services\GameSystem`s\[2320] - MsgSubPro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="World.cs" />
+    <Compile Include="Game\Calculations.cs" />
+    <Compile Include="Services\GamePackets\[System]Chi\ChiStructure.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Arsenal.cs" />
+    <Compile Include="Game\ConquerStructures\Broadcast.cs" />
+    <Compile Include="Game\ConquerStructures\Mine.cs" />
+    <Compile Include="Game\ConquerStructures\Booth.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Apprentice.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Guild.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Mentor.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Enemy.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Friend.cs" />
+    <Compile Include="Game\ConquerStructures\Nobility.cs" />
+    <Compile Include="Game\ConquerStructures\Team.cs" />
+    <Compile Include="Game\ConquerStructures\Equipment.cs" />
+    <Compile Include="Game\ConquerStructures\Inventory.cs" />
+    <Compile Include="Game\ConquerStructures\Trade.cs" />
+    <Compile Include="Game\ConquerStructures\Society\TradePartner.cs" />
+    <Compile Include="Game\ConquerStructures\Warehouse.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Clan.cs" />
+    <Compile Include="Game\ConquerStructures\Society\ClanMember.cs" />
+    <Compile Include="Database\RefineryTable.cs" />
+    <Compile Include="Services\GameSystem`s\StaticEntity.cs" />
+    <Compile Include="Game\Screen.cs" />
+    <Compile Include="Game\Entity.cs" />
+    <Compile Include="Game\Map.cs" />
+    <Compile Include="Game\Enums.cs" />
+    <Compile Include="Services\GamePackets\[System]SlotMachine\SlotMachine.cs" />
+    <Compile Include="Services\GameSystem`s\VariableVault.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IKnownPerson.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IProf.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\ISobNpc.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IBaseEntity.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IMapObject.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\INpc.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\IPacket.cs" />
+    <Compile Include="Services\GamePackets\[System]Interfaces\ISkill.cs" />
+    <Compile Include="Conquord\Writer.cs" />
+    <Compile Include="Dialog.cs" />
+    <Compile Include="Mains.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Conquord\Constants.cs" />
+    <Compile Include="Conquord\Counter.cs" />
+    <Compile Include="Conquord\Kernel.cs" />
+    <Compile Include="Services\GameSystem`s\Subclasses.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Game\ProgressBar.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conquord\NpcControl.resx">
+      <DependentUpon>NpcControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conquord\Resources\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conquord.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conquord", "Conquord.csproj", "{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ShaDow|Any CPU = ShaDow|Any CPU
+		ShaDow|x64 = ShaDow|x64
+		ShaDow|x86 = ShaDow|x86
+		TroZenA|Any CPU = TroZenA|Any CPU
+		TroZenA|x64 = TroZenA|x64
+		TroZenA|x86 = TroZenA|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.ShaDow|Any CPU.ActiveCfg = ShaDow|Any CPU
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.ShaDow|Any CPU.Build.0 = ShaDow|Any CPU
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.ShaDow|x64.ActiveCfg = ShaDow|x64
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.ShaDow|x64.Build.0 = ShaDow|x64
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.ShaDow|x86.ActiveCfg = ShaDow|x86
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.ShaDow|x86.Build.0 = ShaDow|x86
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.TroZenA|Any CPU.ActiveCfg = TroZenA|Any CPU
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.TroZenA|Any CPU.Build.0 = TroZenA|Any CPU
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.TroZenA|x64.ActiveCfg = TroZenA|x64
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.TroZenA|x64.Build.0 = TroZenA|x64
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.TroZenA|x86.ActiveCfg = TroZenA|x86
+		{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}.TroZenA|x86.Build.0 = TroZenA|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
